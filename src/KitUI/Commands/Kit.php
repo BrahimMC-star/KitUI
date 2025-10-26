@@ -5,6 +5,7 @@ namespace KitUI\Commands;
 use KitUI\Libs\jojoe77777\FormAPI\SimpleForm;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\item\Armor;
 use pocketmine\item\enchantment\EnchantmentInstance;
 use pocketmine\item\enchantment\StringToEnchantmentParser;
 use pocketmine\item\Item;
@@ -123,7 +124,12 @@ class Kit extends Command
             foreach ($kitData["items"] as $itemData) {
                 $item = $this->createItem($itemData);
                 if ($item !== null) {
-                    $player->getInventory()->addItem($item);
+                    if ($item instanceof Armor) {
+                        $armorInv = $player->getArmorInventory();
+                        $armorInv->setItem($item->getArmorSlot(), $item);
+                    } else {
+                        $player->getInventory()->addItem($item);
+                    }
                 }
             }
 
