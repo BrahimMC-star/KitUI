@@ -1,0 +1,9 @@
+name: KitUI
+version: 1.0.0
+main: KitUI\Main
+api: 5.35.0
+author: br3him000
+description: Simple Kit system that has FormAPI implemented in.
+permissions:
+  kitui.developer:
+    default: op
