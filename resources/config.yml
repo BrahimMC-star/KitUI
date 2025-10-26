@@ -2,6 +2,10 @@
 # Just keep in mind that custom items that are created by Customies or any other plugin aren't supported.
 # To make it work, download the .zip file of the plugin and feel free to modify the codes inside to guarantee its functions.
 # Very important to put the exact names of items to not mess up the plugin's function.
+# Concerned about the plugin? Join our Discord server: https://discord.gg/dAXev4ypAt or contact me on Discord: mounaim_mc for more information.
+# Unfortunately, due to my lack of skills, I do not know how to make a permission on the go through the config.yml file.
+# To get rid of this issue, you must go through the plugin.yml file to add in the necessary details for your custom kits.
+# Thank you for using KitUI!
 
 # Here's an example of two kits that uses various details.
 kits:
@@ -27,7 +31,7 @@ kits:
         count: 16
 
   mine:
-    permission: "kitui.developer"
+    permission: "kitui.mine"
     cooldown: 1800
     items:
       - type: "netherite_axe"
@@ -38,6 +42,13 @@ kits:
           - "§r§aA set of tools for miners."
         unbreakable: true
       - type: "netherite_pickaxe"
+        enchantments:
+          - name: "efficiency"
+            level: 10
+        lore:
+          - "§r§aA set of tools for miners."
+        unbreakable: true
+      - type: "netherite_shovel"
         enchantments:
           - name: "efficiency"
             level: 10

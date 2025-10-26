@@ -21,7 +21,7 @@ class Kit extends Command
 
     public function __construct(private readonly Plugin $plugin)
     {
-        parent::__construct("kit", "Opens the UI to select a kit.", "/kit <kit>");
+        parent::__construct("kit", "Opens the UI to select a kit.", "/kit");
         $this->setPermission(DefaultPermissions::ROOT_USER);
 
         $this->plugin->saveResource("config.yml");
