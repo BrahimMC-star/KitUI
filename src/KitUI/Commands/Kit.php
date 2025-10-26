@@ -2,7 +2,7 @@
 
 namespace KitUI\Commands;
 
-use Libs\jojoe77777\FormAPI\SimpleForm;
+use KitUI\Libs\jojoe77777\FormAPI\SimpleForm;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\item\enchantment\EnchantmentInstance;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Libs\jojoe77777\FormAPI;
+namespace KitUI\Libs\jojoe77777\FormAPI;
 
 use pocketmine\form\FormValidationException;
 
