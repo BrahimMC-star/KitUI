@@ -4,5 +4,6 @@ branches:
 - master
 projects:
   KitUI:
-    path: "resources\model.png"
+    path: ""
+    icon: "resources\model.png"
 ...
