@@ -1,4 +1,4 @@
-name: KitUI
+name: KitUISystem
 version: 1.0.0
 main: KitUI\Main
 api: 5.35.0
